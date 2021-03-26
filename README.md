@@ -11,6 +11,9 @@ https://github.com/nemtech/symbol-bootstrap/blob/main/README.md#user-content-com
 ## Fixing permissions issue
 https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket
 
+Test with 
+``` docker run hello-world ```
+
 ## Trying to fix other issues
 sudo rm target/nodes/api-node-0/data/recovery.lock
 
@@ -21,9 +24,10 @@ https://docs.symbolplatform.com/symbol-openapi/v1.0.0/#tag/Account-routes
 ## Installation
 ```
 sudo apt update
-sudo apt install nodejs npm \ docker docker-compose
+sudo apt install nodejs npm 
+sudo apt install docker docker-compose
 sudo npm install -g symbol-bootstrap
-sudo symbol-bootstrap start -p bootstrap 
+symbol-bootstrap start -p bootstrap 
 ```
 
 ## Run Symbol Bootstrap (detached)

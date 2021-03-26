@@ -14,6 +14,10 @@ https://www.digitalocean.com/community/questions/how-to-fix-docker-got-permissio
 ## Trying to fix other issues
 sudo rm target/nodes/api-node-0/data/recovery.lock
 
+## Symbol API routes
+
+https://docs.symbolplatform.com/symbol-openapi/v1.0.0/#tag/Account-routes
+
 ## Installation
 ```
 sudo apt update
@@ -28,15 +32,25 @@ symbol-bootstrap start -p bootstrap -a full --detached
 (sudo symbol-bootstrap start -p bootstrap  -> ctrl + z , bg, exit)
 ```
 
+## Fix API issue
+http://3.237.170.111:3000/node/health
+http://3.237.170.111:3000/chain/info
+
+sudo rm nodes/api-node-0/data/recovery.lock
+
 ## Symbol-cli
 ```
 sudo npm install -g symbol-cli
 
 ```
 
-## View Explorer, Faucet, etc
+## Endpoints and Websites
 http://54.160.18.13:90/
+
 http://54.160.18.13:100
+
+http://127.0.0.1:3000/node/info
+http://54.160.18.1:3000/node/info
 
 
 ## SSH Tunnel
